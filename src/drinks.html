@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Food Recipes</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <h1 id="food">Food Recipes</h1>
+
+        <div class="menu">
+            <img class="show_hide" onclick="menu_show()" src="Icons/3 bar white.png" alt="">
+        </div>
+
+        <nav id="nav">
+           <ul>
+               <li class="show_hide" onclick="menu_exit()">Close Menu</li>
+               <li><a href="#gallery">Recipes</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#footer">Tags</a></li>
+           </ul>
+        </nav>
+    </header>
+
+
+    <section class="gallery" id="gallery">
+        <div class="img_gallery">
+            <div class="card">
+                <div class="image">
+                    <img src="img/mangoJuice.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>MANGO JUICE</h3><br>
+                    <button class="recipe-button" onclick="openMangoJuiceRecipePopup()">Get Detailed Recipe</button>
+
+<div id="mangoJuiceRecipePopup" class="recipe-popup">
+  <div class="recipe-content">
+    <!-- Add the detailed recipe content here -->
+    <div class="recipe-scroll">
+    <h2>Mango Juice</h2>
+    <p class="left-align"> <b>Ingredients:</b><br>
+        2 ripe mangoes,1 cup water,Sugar or honey (optional, for sweetness),Ice cubes (optional)<br>
+        <b>Instructions:</b><br>
+        <ul>
+        <li class="recipe-list-item">-- Wash the mangoes thoroughly under running water to remove any dirt or residue.</li>
+
+        <li class="recipe-list-item">-- Cut the mangoes in half around the pit, and then remove the pit from each half. Use a spoon to scoop out the mango flesh from the skin.</li>
+
+        <li class="recipe-list-item">-- Place the mango flesh into a blender or food processor.</li>
+
+        <li class="recipe-list-item">-- Add water to the blender along with the mango flesh. The amount of water can be adjusted based on your desired consistency. Start with 1 cup and add more if needed.</li>
+
+        <li class="recipe-list-item">-- Blend the mango and water mixture until it becomes smooth and creamy. If desired, you can strain the juice through a fine mesh strainer to remove any fibers or pulp.</li>
+
+        <li class="recipe-list-item">-- Taste the mango juice and if you prefer it sweeter, add sugar or honey according to your taste. Start with a small amount, such as 1-2 teaspoons, and adjust as needed. Blend again to incorporate the sweetener.</li>
+
+        <li class="recipe-list-item">-- If you prefer a chilled mango juice, you can add some ice cubes to the blender and blend again until the ice is crushed and well mixed with the juice.</li>
+
+        <li class="recipe-list-item">-- If you prefer a chilled mango juice, you can add some ice cubes to the blender and blend again until the ice is crushed and well mixed with the juice.</li>
+
+        <li class="recipe-list-item">--Enjoy your refreshing homemade mango juice!</li>
+    </ul>
+    </p>
+</div>
+  </div>
+</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="img/lassi.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>LASSI</h3><br>
+                    <button class="recipe-button" onclick="openLassiRecipePopup()">Get Detailed Recipe</button>
+                    <div id="lassiRecipePopup" class="recipe-popup">
+                        <div class="recipe-content">
+                          <!-- Add the detailed recipe content here -->
+                          <div class="recipe-scroll">
+                          <h2>Lassi</h2>
+                          <p class="left-align"> <b>Ingredients:</b><br>
+                            1 cup plain yogurt,1/2 cup chilled milk,2 tablespoons sugar (adjust according to taste),A pinch of cardamom powder (optional),Ice cubes (optional),Chopped nuts for garnish (such as almonds or pistachios, optional)<br>
+                            <b>Instructions</b>
+                            <br>
+                           <ul>
+                               <li class="recipe-list-item">-- In a blender, combine the plain yogurt, chilled milk, sugar, and cardamom powder (if using).</li>
+                               <li class="recipe-list-item">-- Blend the mixture on high speed until smooth and frothy.</li>
+                               <li class="recipe-list-item">-- Taste the lassi and adjust the sweetness by adding more sugar if desired.</li>
+                               <li class="recipe-list-item">-- If you prefer a colder lassi, add some ice cubes to the blender and blend again until the ice is crushed and mixed with the lassi.</li>
+                               <li class="recipe-list-item">-- Pour the lassi into glasses. You can garnish with a sprinkle of cardamom powder or chopped nuts if desired.</li>
+                               <li class="recipe-list-item">-- Serve the lassi immediately and enjoy its refreshing flavor.</li>
+                           </ul>
+                       </p>
+                    </div>
+                </div>
+              </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="img/Dolgonacoffee.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>DALGONA COFFEE</h3><br>
+                    <button class="recipe-button" onclick="opendalgonaCoffeeRecipePopup()">Get Detailed Recipe</button>
+                    <div id="dalgonaCoffeeRecipePopup" class="recipe-popup">
+                        <div class="recipe-content">
+                          <!-- Add the detailed recipe content here -->
+                          <div class="recipe-scroll">
+                          <h2>Dalgona Coffee</h2>
+                          <p class="left-align"> <b>Ingredients:</b><br>
+                            2 tablespoons instant coffee,2 tablespoons granulated sugar,2 tablespoons hot water,Milk (any kind you prefer) Ice cubes (optional)<br>
+                             <b>Instructions:</b><br>
+                             <ul>
+                             <li class="recipe-list-item">-- In a mixing bowl, combine the instant coffee, sugar, and hot water. You can adjust the amount of coffee, sugar, and water depending on your taste preferences.</li>
+                             <li class="recipe-list-item">-- Using an electric hand mixer, stand mixer, or whisk, beat the mixture on high speed. Continue whisking for about 3 to 5 minutes or until the mixture becomes thick, frothy, and creamy. If you're using a whisk, it may take longer and require more effort.</li>
+                             <li class="recipe-list-item">-- Fill a glass with milk of your choice, leaving some space at the top for the whipped coffee.</li>
+                             <li class="recipe-list-item">-- Spoon the whipped coffee mixture on top of the milk. You can be as creative as you like while spooning or piping the whipped coffee.</li>
+                             <li class="recipe-list-item">-- If desired, you can add ice cubes to make it a cold beverage.</li>
+                             <li class="recipe-list-item">-- To enjoy your Dalgona coffee, either stir the whipped coffee into the milk to mix the flavors or sip the milk and let the coffee mix in your mouth as you drink.</li>
+
+                            </ul>
+                            </p>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="img/orangeJuice.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>ORANGE JUICE</h3><br>
+                    <button class="recipe-button" onclick="openorangejuiceRecipePopup()">Get Detailed Recipe</button>
+                    <div id="orangeJuiceRecipePopup" class="recipe-popup">
+                        <div class="recipe-content">
+                          <!-- Add the detailed recipe content here -->
+                          <div class="recipe-scroll">
+                          <h2>Orange Juice</h2>
+                          <p class="left-align"> <b><u>Ingredients</u></b><br>
+                            4-6 oranges (depending on their size and how much juice you want),Ice cubes (optional)<br>
+                            <b><u>Instructions</u></b><br>
+                            <ul>
+                            <li class="recipe-list-item">-- Wash the oranges thoroughly under running water to remove any dirt or residue.</li>
+                            <li class="recipe-list-item">-- Cut the oranges in half across the equator.</li>
+                            <li class="recipe-list-item">-- Using a citrus juicer or a handheld juicer, squeeze the juice from each orange half into a bowl or a jug. If you don't have a juicer, you can also manually squeeze the oranges using your hands, but make sure to strain the juice afterward to remove any seeds or pulp.</li>
+                            <li class="recipe-list-item">-- If desired, you can strain the juice through a fine mesh strainer to remove any fibers, seeds, or pulp.</li>
+                            <li class="recipe-list-item">-- Taste the orange juice and if you prefer it colder, you can add some ice cubes to the juice and stir until they're well mixed.</li>
+                            <li class="recipe-list-item">-- Pour the orange juice into glasses and serve immediately. You can also refrigerate it for a short time to chill it further before serving.</li>
+                            <li class="recipe-list-item">--Enjoy your fresh and flavorful homemade orange juice!</li>
+
+                            </ul>
+                            </p>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="card" id="gallery2">
+                <div class="image">
+                    <img src="img/tea.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>TEA</h3><br>
+                    <button class="recipe-button" onclick="openteaRecipePopup()">Get Detailed Recipe</button>
+                    <div id="teaRecipePopup" class="recipe-popup">
+                        <div class="recipe-content">
+                          <!-- Add the detailed recipe content here -->
+                          <div class="recipe-scroll">
+                          <h2>Tea</h2>
+                          <p class="left-align"> <b>Ingredients:</b><br>
+                            1 cup water,1 teaspoon loose tea leaves or 1 tea bag (choose your preferred variety, such as black tea, green tea, or herbal tea),Sugar or sweetener (optional),Milk (optional)<br>
+                            <b>Instruction</b>
+                            <br>
+                           <ul>
+                               <li class="recipe-list-item">-- In a saucepan, bring the water to a boil..</li>
+                               <li class="recipe-list-item">-- Once the water reaches a rolling boil, add the tea leaves or tea bag to the saucepan.</li>
+                               <li class="recipe-list-item">-- Reduce the heat to low and let the tea steep for 2-3 minutes. Adjust the steeping time based on your preference for a stronger or milder tea.</li>
+                               <li class="recipe-list-item">-- If you prefer your tea sweetened, you can add sugar or sweetener according to your taste during the steeping process. Stir well to dissolve the sugar.</li>
+                               <li class="recipe-list-item">-- If you prefer your tea with milk, you can add a splash of milk to the saucepan during the steeping process. The amount of milk can be adjusted based on your preference for a lighter or creamier tea.
+           </li>
+                               <li class="recipe-list-item">-- After steeping, remove the saucepan from the heat and strain the tea into a cup or teapot to remove the tea leaves or tea bag.</li>
+                               <li class="recipe-list-item">-- Give the tea a gentle stir and it's ready to be enjoyed.</li>
+                           </ul>
+                       </p>
+                            </div>
+                            </div>
+                            </div>
+                </div>
+            </div>
+            <div class="card" id="gallery2">
+                <div class="image">
+                    <img src="img/badamMilk.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>BADAM MILK</h3><br>
+                    <button class="recipe-button" onclick="openbadamMilkRecipePopup()">Get Detailed Recipe</button>
+                    <div id="badamMilkRecipePopup" class="recipe-popup">
+                        <div class="recipe-content">
+                          <!-- Add the detailed recipe content here -->
+                          <div class="recipe-scroll">
+                          <h2>Badam Milk</h2>
+                          <p class="left-align"> <b>Ingredients:</b><br>
+                            1 cup almonds,4 cups milk (you can use dairy milk or a plant-based alternative),1/4 cup sugar (adjust according to taste),1/4 teaspoon cardamom powder,A pinch of saffron strands (optional),Chopped almonds for garnish (optional)<br>
+                            <b>Instruction</b>
+                            <ul>
+                               <li class="recipe-list-item">-- Soak the almonds in water overnight or for at least 6-8 hours. This will soften them and make them easier to blend.</li>
+                               <li class="recipe-list-item">-- Drain the soaked almonds and rinse them with fresh water.</li>
+                               <li class="recipe-list-item">-- Remove the skin from the almonds. You can do this by pinching each almond between your thumb and index finger, and the skin should easily slide off. Alternatively, you can blanch the almonds in boiling water for a minute and then rinse them with cold water. The skins should peel off easily after blanching.</li>
+                               <li class="recipe-list-item">-- In a blender, add the peeled almonds along with a little milk (about 1/2 cup) and blend until you get a smooth paste. You may need to stop and scrape down the sides of the blender occasionally to ensure all the almonds are blended.</li>
+                               <li class="recipe-list-item">-- In a saucepan, heat the remaining milk over medium heat until it comes to a gentle simmer.</li>
+                               <li class="recipe-list-item">-- Add the almond paste to the simmering milk and stir well to combine.</li>
+                               <li class="recipe-list-item">-- Add sugar, cardamom powder, and saffron strands (if using) to the milk and almond mixture. Stir continuously until the sugar is completely dissolved and the flavors are well incorporated.</li>
+                               <li class="recipe-list-item">-- Continue to heat the badam milk for another 5-10 minutes, stirring occasionally, until it reaches your desired temperature and consistency. You can adjust the thickness of the milk by simmering for a longer time if desired.</li>
+                               <li class="recipe-list-item">-- Remove the badam milk from the heat and let it cool for a few minutes.</li>
+                               <li class="recipe-list-item">-- Once cooled slightly, pour the badam milk into serving glasses or cups. You can garnish with chopped almonds if desired.</li>
+                               <li class="recipe-list-item">-- Serve the badam milk warm or refrigerate it for a few hours to enjoy it chilled.</li>
+                               <li class="recipe-list-item">-- Enjoy the rich and creamy goodness of homemade badam milk!</li>
+                           </ul>
+                       </p>
+                                </div>
+                                </div>
+                                </div>
+                </div>
+            </div>
+            <div class="card" id="gallery2">
+                <div class="image">
+                    <img src="img/coffee.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>COFFEE</h3><br>
+                    <button class="recipe-button" onclick="opencoffeeRecipePopup()">Get Detailed Recipe</button>
+                    <div id="coffeeRecipePopup" class="recipe-popup">
+                        <div class="recipe-content">
+                          <!-- Add the detailed recipe content here -->
+                          <div class="recipe-scroll">
+                          <h2>Coffee</h2>
+                          <p class="left-align"> <b>Ingredients:</b><br>
+                            Freshly roasted coffee beans or pre-ground coffee,Water,Optional: Sugar, milk, or any other desired additives<br>
+                            <b>Instructions</b>
+                            <br>
+                            <ul>
+                               <li class="recipe-list-item">-- Measure the desired amount of water for brewing. As a general guideline, use about 1-2 tablespoons of coffee grounds for every 6 ounces (180 ml) of water. Adjust the ratio based on your personal taste preferences.</li>
+                               <li class="recipe-list-item">-- Grind your coffee beans if using whole beans. The grind size will depend on your preferred brewing method. For a standard drip coffee maker, a medium grind is usually suitable. If you're using pre-ground coffee, skip this step.</li>
+                               <li class="recipe-list-item">-- Add water to your coffee maker or kettle and bring it to a boil. If using a coffee maker, follow the manufacturer's instructions for water and coffee measurements.</li>
+                               <li class="recipe-list-item">-- Place the coffee grounds into the coffee filter or coffee maker. If using a French press, add the coffee grounds directly into the pot.</li>
+                               <li class="recipe-list-item">-- Once the water is boiled, allow it to cool for about 30 seconds to 1 minute to reach the ideal temperature for brewing. The optimal temperature range is around 195-205°F (90-96°C).</li>
+                               <li class="recipe-list-item">-- Slowly pour the hot water over the coffee grounds, making sure to wet all the grounds evenly. For a standard drip coffee maker, simply pour the water into the reservoir and let the machine do the rest.</li>
+                               <li class="recipe-list-item">-- Allow the coffee to brew for the recommended time based on your brewing method. Typically, it takes about 4-5 minutes for drip coffee makers, 2-4 minutes for a French press, and less than a minute for espresso machines.</li>
+                               <li class="recipe-list-item">-- Once the brewing time is complete, carefully remove the coffee filter or plunger, or stop the brewing process according to your brewing equipment.</li>
+                               <li class="recipe-list-item">-- If desired, add sugar, milk, or any other additives to your coffee, adjusting the amount based on your taste preferences.</li>
+                               <li class="recipe-list-item">-- Stir well to incorporate the additives, and your coffee is ready to be enjoyed!</li>
+                           </ul>
+                       </p>
+                                </div>
+                                </div>
+                                </div>
+                </div>
+            </div>
+
+            <div class="card" id="gallery2">
+                <div class="image">
+                    <img src="img/BananaSmoothie.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>BANANA SMOOTHIE</h3><br>
+                    <button class="recipe-button" onclick="openbananSmoothieRecipePopup()">Get Detailed Recipe</button>
+                    <div id="bananaSmoothieRecipePopup" class="recipe-popup">
+                        <div class="recipe-content">
+                          <!-- Add the detailed recipe content here -->
+                          <div class="recipe-scroll">
+                          <h2>Banana Smoothie</h2>
+                          <p class="left-align"> <b>Ingredients</b><br>
+                            2 ripe bananas,1 cup milk (you can use dairy milk or a plant-based alternative like almond milk, soy milk, or coconut milk),1/2 cup plain yogurt (optional),1 tablespoon honey or maple syrup (optional, for added sweetness),Ice cubes (optional, for a chilled smoothie)<br>
+
+                            <b>Instructions</b><br>
+                            <ul>
+                                <li class="recipe-list-item">-- Peel the bananas and break them into smaller chunks.</li>
+                                <li class="recipe-list-item">-- Place the banana chunks in a blender.</li>
+                                <li class="recipe-list-item">-- Add the milk, yogurt (if using), and sweetener (if desired) to the blender.</li>
+                                <li class="recipe-list-item">-- If you want a colder smoothie, add a handful of ice cubes as well.</li>
+                                <li class="recipe-list-item">-- Blend all the ingredients together until smooth and creamy.</li>
+                                <li class="recipe-list-item">-- Taste the smoothie and adjust the sweetness or thickness by adding more honey/maple syrup or milk, if needed.</li>
+                                <li class="recipe-list-item">-- Once you achieve the desired consistency, pour the smoothie into glasses.</li>
+                                <li class="recipe-list-item">-- You can garnish the smoothie with a slice of banana or sprinkle some cinnamon on top, if desired.</li>
+                                <li class="recipe-list-item">-- Serve immediately and enjoy!</li>
+
+
+                                </ul>
+                            </p>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <ul>
+                <li><a href="snacks.html"><button class="text-color">&lt;&lt;</button></a></li>
+                <li><a href="index.html"><button class="text-color">Lunch</button></a></li>
+                <li><a href="snacks.html"><button class="text-color">Snacks</button></a></li>
+                <li class="active"><a href="drinks.html">Drinks</a></li>
+                <li><a href="index.html"><button class="text-color">&gt;&gt;</button></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="title"><b>Discover the Rich Flavors and Culinary Heritage of Indian Cuisine</b></h1>
+        <div class="about_banner">
+            <img src="img/Indian food2.jpg" alt="">
+        </div>
+
+        <h1 class="caption">Indian Food</h1>
+        <em>With passion For Real, Good Food</em>
+        <p>
+            Indian cuisine is a rich tapestry of flavors, aromas, and traditions that captivate the senses and leave a lasting impression. With its diverse regional cuisines, India offers a remarkable culinary journey filled with vibrant spices, aromatic herbs, and a harmonious blend of textures. From the fiery curries of the north to the delicate coastal seafood delicacies of the south, every region has its distinct culinary identity. Indian food is not just about sustenance; it's a celebration of culture and community, where meals bring people together and create lasting memories. Embark on a gastronomic adventure and let the vibrant flavors of Indian food transport you to a world of taste sensations like no other.
+        </p>
+    </section>
+
+
+    <footer>
+        <div class="footer">
+        <h1>About Website</h1>
+        <p>
+            This Website Provides.<br>Delicious food items<br>Which are famous in India<br>
+            Also gives information about<br>
+            how to prepare recipe.
+
+        </p>
+    </div>
+    <div class="footer" id="footer">
+        <h1>Contact Information</h1>
+        <p>
+            What's App: xxxxxxxx<br>
+            Phone Number: xxxxxxxx<br>
+            Email: xxxxxxxxxxx<br>
+            Address: xxxxxxxxx<br>
+            Landmark: xxxxxxxxxx<br>
+        </p>
+    </div>
+
+
+
+    <div class="posts">
+        <h1>POPULAR TAGS</h1>
+        <div class="each_post active">Drinks</div>
+        <div class="each_post"><a href="#gallery" style="color:white;">Mango Juice</a></div>
+        <div class="each_post"><a href="#gallery" style="color:white;">Lassi</a></div>
+        <div class="each_post"><a href="#gallery" style="color:white;">Dalgona Coffee</a></div>
+        <div class="each_post"><a href="#gallery" style="color:white;">Orange Juice</a></div>
+        <div class="each_post"><a href="#gallery2" style="color:white;">Tea</a></div>
+        <div class="each_post"><a href="#gallery2" style="color:white;">Badam Milk</a></div>
+        <div class="each_post"><a href="#gallery2" style="color:white;">Coffee</a></div>
+        <div class="each_post"><a href="#gallery2" style="color:white;">Banana Smoothie</a></div>
+
+    </div>
+</footer>
+</main>
+<script>
+    var nav = document.getElementById("nav");
+
+    function menu_show(){
+        nav.style.display="block";
+    }
+
+    function menu_exit(){
+        nav.style.display="none";
+    }
+</script>
+<script src="java.js"></script>
+</body>
+</html>

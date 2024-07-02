@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Food Recipes</title>
+</head>
+<body>
+
+<main>
+    <header>
+        <h1 id="food">Food Recipes</h1>
+
+        <div class="menu">
+            <img class="show_hide" onclick="menu_show()" src="Icons/3 bar white.png" alt="">
+        </div>
+
+        <nav id="nav">
+           <ul>
+               <li class="show_hide" onclick="menu_exit()">Close Menu</li>
+               <li><a href="#gallery">Recipes</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#footer">Tags</a></li>
+           </ul>
+        </nav>
+    </header>
+
+
+    <section class="gallery" id="gallery">
+        <div class="img_gallery">
+            <div class="card">
+                <div class="image">
+                    <img src="img/biryani.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>CHICKEN BIRYANI</h3><br>
+
+                    <button class="recipe-button" onclick="openBiryaniRecipePopup()">Get Detailed Recipe</button>
+
+<div id="recipePopup" class="recipe-popup">
+  <div class="recipe-content">
+    <!-- Add the detailed recipe content here -->
+    <div class="recipe-scroll">
+    <h2>Chicken Biryani</h2>
+    <p class="left-align"> <b>Ingredients:</b><br>
+
+        2 cups basmati rice,500 grams chicken(cut into pieces),1 large onion(thinly sliced),2 tomatoes(chopped),2 tablespoons biryani masala,1 tablespoon ginger-garlic paste,1/2 cup plain yogurt,1/4 cup chopped mint leaves,1/4 cup chopped coriander leaves,2 green chilies(slit),2 cinnamon sticks,4 green cardamom pods,4 cloves,1 teaspoon cumin seeds,1/2 teaspoon turmeric powder,1/2 teaspoon red chili powder,1/4 cup ghee or vegetable oil,Salt to taste,Saffron strands (optional) soaked in 2 tablespoons warm milk for garnish.<br>
+        <b>Instructions:</b><br>
+        <ul>
+        <li class="recipe-list-item">-- Wash the basmati rice in cold water until the water runs clear. Soak the rice in water for 30 minutes, then drain.</li>
+
+        <li class="recipe-list-item">-- Heat ghee or vegetable oil in a large heavy-bottomed pan over medium heat. Add the cinnamon sticks, cardamom pods, cloves, and cumin seeds. Sauté for a minute until fragrant.</li>
+
+        <li class="recipe-list-item">-- Add the sliced onions and cook until they turn golden brown.</li>
+
+        <li class="recipe-list-item">-- Add the ginger-garlic paste and green chilies. Sauté for a minute until the raw smell disappears.</li>
+
+        <li class="recipe-list-item">-- Add the chicken pieces and cook until they are lightly browned.</li>
+
+        <li class="recipe-list-item">-- Add the chopped tomatoes, biryani masala, turmeric powder, red chili powder, and salt. Cook for a few minutes until the tomatoes soften.</li>
+
+        <li class="recipe-list-item">-- In a separate bowl, whisk the plain yogurt until smooth. Add it to the pan and mix well with the chicken and spices.</li>
+
+        <li class="recipe-list-item">-- Add the soaked and drained basmati rice to the pan. Stir gently to combine the rice with the chicken and spices.</li>
+
+        <li class="recipe-list-item">-- Pour 3 cups of water into the pan and bring it to a boil. Reduce the heat to low, cover the pan with a tight-fitting lid, and let it simmer for about 15-20 minutes, or until the rice is cooked and the chicken is tender. Do not lift the lid while the biryani is cooking.</li>
+
+        <li class="recipe-list-item">-- Once cooked, remove the pan from heat and let it sit, covered, for another 10 minutes to allow the flavors to meld.</li>
+
+        <li class="recipe-list-item">-- Garnish the biryani with chopped mint leaves, coriander leaves, and saffron strands soaked in warm milk. Fluff the rice gently with a fork.</li>
+
+        <li class="recipe-list-item">-- Serve the chicken biryani hot with raita (yogurt sauce), salad, or any side dish of your choice.</li>
+    </ul>
+    </p>
+</div>
+  </div>
+</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="img/paneer butter masala.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>PANNER BUTTER MASALA</h3><br>
+                    <button class="recipe-button" onclick="openPaneerRecipePopup()">Get Detailed Recipe</button>
+                    <div id="paneerRecipePopup" class="recipe-popup">
+                        <div class="recipe-content">
+                          <!-- Add the detailed recipe content here -->
+                          <div class="recipe-scroll">
+                          <h2>Paneeer Butter Masala</h2>
+                          <p class="left-align"> <b>Ingredients:</b><br>
+                            200g paneer (Indian cottage cheese)-cut into cubes,2 tablespoons butter,1 tablespoon oil,1 medium-sized onion(finely chopped),2 tomatoes(pureed),1 tablespoon ginger-garlic paste,1 teaspoon red chili powder (adjust to taste),1 teaspoon garam masala,1/2 teaspoon turmeric powder,1 teaspoon coriander powder,1/2 cup heavy cream,1/2 cup water (adjust as needed),Salt to taste,Fresh coriander leaves(for garnishing)
+                            <b>Instructions:</b><br>
+                            <ul>
+                                <li class="recipe-list-item">-- Heat butter and oil in a pan over medium heat.</li>
+                                <li class="recipe-list-item">-- Add the finely chopped onions and sauté until they turn golden brown.</li>
+                                <li class="recipe-list-item">-- Add the ginger-garlic paste and sauté for a minute until the raw smell disappears.</li>
+                                <li class="recipe-list-item">-- Pour in the tomato puree and cook for 2-3 minutes until the oil starts to separate from the mixture.</li>
+                                <li class="recipe-list-item">-- Add red chili powder, turmeric powder, coriander powder, and garam masala. Mix well and cook for another minute.</li>
+                                <li class="recipe-list-item">-- Reduce the heat to low and add the paneer cubes to the mixture. Stir gently to coat the paneer with the spices.</li>
+                                <li class="recipe-list-item">-- Pour in the water and season with salt. Mix well.</li>
+                                <li class="recipe-list-item">-- Cover the pan and let the curry simmer on low heat for about 10 minutes to allow the flavors to meld together.</li>
+                                <li class="recipe-list-item">-- Stir in the heavy cream and cook for an additional 2 minutes.</li>
+                                <li class="recipe-list-item">-- Turn off the heat and garnish with freshly chopped coriander leaves.</li>
+                                <li class="recipe-list-item">-- Serve hot with naan, roti, or rice.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+              </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="img/tandoori chicken.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>CHICKEN TANDOORI</h3><br>
+                    <button class="recipe-button" onclick="openTandooriRecipePopup()">Get Detailed Recipe</button>
+                    <div id="tandooriRecipePopup" class="recipe-popup">
+                        <div class="recipe-content">
+                          <!-- Add the detailed recipe content here -->
+                          <div class="recipe-scroll">
+                          <h2>Chicken Tandoori</h2>
+                          <p class="left-align"> <b>Ingredients:</b><br>
+                             1 kg chicken (preferably bone-in pieces),1 cup plain yogurt,2 tablespoons lemon juice,2 tablespoons vegetable oil,2 tablespoons tandoori masala,1 tablespoon ginger-garlic paste,1 tablespoon paprika,1 teaspoon turmeric powder,1 teaspoon ground cumin,1 teaspoon ground coriander,1 teaspoon red chili powder (adjust to taste),1 teaspoon salt (adjust to taste),Fresh coriander leaves(for garnishing),Lemon wedges(for serving)<br>
+                             <b>Instructions:</b><br>
+                             <ul>
+                             <li class="recipe-list-item">-- In a large bowl, combine yogurt, lemon juice, vegetable oil, tandoori masala, ginger-garlic paste, paprika, turmeric powder, ground cumin, ground coriander, red chili powder, and salt. Mix well to form a marinade.</li>
+                             <li class="recipe-list-item">-- Add the chicken pieces to the marinade and coat them evenly. Make sure the chicken is well coated with the marinade. You can use a fork to pierce the chicken pieces to allow the marinade to penetrate better.</li>
+                             <li class="recipe-list-item">-- Cover the bowl with plastic wrap and marinate the chicken in the refrigerator for at least 2-3 hours, or preferably overnight to allow the flavors to infuse.</li>
+                             <li class="recipe-list-item">-- Preheat the oven to 200°C (400°F).</li>
+                             <li class="recipe-list-item">-- Place the marinated chicken pieces on a baking tray lined with aluminum foil.</li>
+                             <li class="recipe-list-item">-- Bake the chicken in the preheated oven for about 25-30 minutes or until it is cooked through and the outer surface is nicely charred. You can also grill the chicken on a barbecue or tandoor for an authentic smoky flavor.</li>
+                             <li class="recipe-list-item">-- Once cooked, remove the chicken from the oven and let it rest for a few minutes.</li>
+                             <li class="recipe-list-item">-- Garnish with fresh coriander leaves and serve hot with lemon wedges.</li>
+                             <li class="recipe-list-item">-- Enjoy your flavorful Chicken Tandoori! It pairs well with naan bread, rice, or a side salad.</li>
+                            </ul>
+                            </p>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+
+            </div>
+
+            <div class="card">
+                <div class="image">
+                    <img src="img/mashroom.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>MUSHROOM CURRY</h3><br>
+                    <button class="recipe-button" onclick="openMushroomRecipePopup()">Get Detailed Recipe</button>
+                    <div id="mushroomRecipePopup" class="recipe-popup">
+                        <div class="recipe-content">
+                          <!-- Add the detailed recipe content here -->
+                          <div class="recipe-scroll">
+                          <h2>Mushroom Curry</h2>
+                          <p class="left-align"> <b>Ingredients:</b><br>
+                            500 grams mushrooms(sliced),1 onion(finely chopped),2 tomatoes(pureed),2 cloves of garlic(minced),1-inch piece of ginger(grated),1 green chili(finely chopped) (optional, adjust to taste),1 teaspoon cumin seeds,1 teaspoon coriander powder,1/2 teaspoon turmeric powder,1/2 teaspoon red chili powder (adjust to taste),1/2 teaspoon garam masala,1/4 cup fresh coriander leaves(chopped),2 tablespoons cooking oil,Salt to taste<br>
+                            <b>Instructions:</b><br>
+                            <ul>
+                            <li class="recipe-list-item">-- Heat oil in a pan over medium heat. Add cumin seeds and let them splutter.</li>
+                            <li class="recipe-list-item">-- Add the chopped onion and sauté until it turns golden brown.</li>
+                            <li class="recipe-list-item">-- Add the minced garlic, grated ginger, and chopped green chili. Sauté for a minute until the raw smell goes away.</li>
+                            <li class="recipe-list-item">-- Add the tomato puree and cook for a few minutes until the oil separates from the mixture.</li>
+                            <li class="recipe-list-item">-- Add the coriander powder, turmeric powder, red chili powder, and salt. Mix well and cook for a minute.</li>
+                            <li class="recipe-list-item">-- Add the sliced mushrooms and stir to coat them evenly with the spice mixture. Cook for 5-7 minutes until the mushrooms are tender and cooked through.</li>
+                            <li class="recipe-list-item">-- Add garam masala and give it a final stir.</li>
+                            <li class="recipe-list-item">-- Garnish with freshly chopped coriander leaves.</li>
+                            <li class="recipe-list-item">-- Serve hot with roti, naan, or rice.</li>
+                            </ul>
+                            </p>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="card" id="gallery2">
+                <div class="image">
+                    <img src="img/naan.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>NAAN</h3><br>
+                    <button class="recipe-button" onclick="openNaanRecipePopup()">Get Detailed Recipe</button>
+                    <div id="naanRecipePopup" class="recipe-popup">
+                        <div class="recipe-content">
+                          <!-- Add the detailed recipe content here -->
+                          <div class="recipe-scroll">
+                          <h2>Naan</h2>
+                          <p class="left-align"> <b>Ingredients:</b><br>
+                            2 cups all-purpose flour,1 teaspoon instant yeast,1 teaspoon sugar,1/2 teaspoon salt,1/2 cup warm milk,1/4 cup plain yogurt,2 tablespoons melted butter,2 tablespoons vegetable oil,Garlic and coriander leaves for garnish (optional)<br>
+                            <b>Instructions:</b><br>
+                            <ul>
+                            <li class="recipe-list-item">-- In a mixing bowl, combine the all-purpose flour, instant yeast, sugar, and salt.</li>
+                            <li class="recipe-list-item">-- Add the warm milk and plain yogurt to the dry ingredients. Mix well to form a soft dough.</li>
+                            <li class="recipe-list-item">-- Knead the dough on a floured surface for about 5-7 minutes until it becomes smooth and elastic.</li>
+                            <li class="recipe-list-item">-- Place the dough in a greased bowl and cover it with a clean kitchen towel. Allow it to rest in a warm place for about 1-2 hours or until it doubles in size.</li>
+                            <li class="recipe-list-item">-- After the dough has risen, punch it down to release the air. Divide it into small portions and shape each portion into a ball.</li>
+                            <li class="recipe-list-item">-- Preheat your oven to the highest temperature setting or heat a skillet over medium-high heat on the stovetop.</li>
+                            <li class="recipe-list-item">-- Take one dough ball and roll it out into an oval or circular shape, about 1/4 inch thick.</li>
+                            <li class="recipe-list-item">-- If using the oven, place the rolled dough onto a baking sheet or pizza stone and bake for 2-3 minutes until it puffs up and turns slightly golden. If using a skillet, place the rolled dough onto the heated skillet and cook for 1-2 minutes on each side until it puffs up and develops light brown spots.</li>
+                            <li class="recipe-list-item">-- Once cooked, brush the naan with melted butter and garnish with minced garlic and chopped coriander leaves if desired.</li>
+                            <li class="recipe-list-item">-- Repeat the process with the remaining dough balls.</li>
+                            <li class="recipe-list-item">-- Serve the freshly baked Naan bread warm with your favorite curry or dip.</li>
+                            </ul>
+                            </p>
+                            </div>
+                            </div>
+                            </div>
+                </div>
+            </div>
+            <div class="card" id="gallery2">
+                <div class="image">
+                    <img src="img/dal.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>DAL</h3><br>
+                    <button class="recipe-button" onclick="openDalRecipePopup()">Get Detailed Recipe</button>
+                    <div id="dalRecipePopup" class="recipe-popup">
+                        <div class="recipe-content">
+                          <!-- Add the detailed recipe content here -->
+                          <div class="recipe-scroll">
+                          <h2>Dal</h2>
+                          <p class="left-align"> <b>Ingredients:</b><br>
+                            1 cup yellow or red lentils (also known as Toor Dal or Masoor Dal),3 cups water,1 onion(finely chopped),2 tomatoes(finely chopped),3 cloves of garlic(minced),1-inch piece of ginger(grated),2 green chilies(slit (adjust to taste)),1 teaspoon cumin seeds,1/2 teaspoon turmeric powder,1/2 teaspoon red chili powder (adjust to taste),1 teaspoon garam masala,1 tablespoon ghee (clarified butter) or oil,Salt to taste,Fresh coriander leaves for garnish<br>
+                            <b>Instructions:</b><br>
+                            <ul>
+                                <li class="recipe-list-item">-- Rinse the lentils under running water until the water runs clear. Drain well.</li>
+                                <li class="recipe-list-item">-- In a pressure cooker or a large pot, add the lentils and water. Cook the lentils until they become soft and mushy. If using a pressure cooker, cook for about 4-5 whistles or according to the instructions for your specific lentil variety. If using a pot, cook for approximately 30-40 minutes, or until the lentils are tender.</li>
+                                <li class="recipe-list-item">-- In a separate pan, heat the ghee or oil over medium heat. Add the cumin seeds and let them splutter.</li>
+                                <li class="recipe-list-item">-- Add the chopped onion and sauté until it turns golden brown.</li>
+                                <li class="recipe-list-item">-- Add the minced garlic, grated ginger, and slit green chilies. Sauté for a minute until the raw smell goes away.</li>
+                                <li class="recipe-list-item">-- Add the chopped tomatoes and cook until they become soft and mushy.</li>
+                                <li class="recipe-list-item">-- Add the turmeric powder, red chili powder, and salt. Mix well and cook for a couple of minutes.</li>
+                                <li class="recipe-list-item">-- Transfer the cooked lentils to the pan with the onion and tomato mixture. Stir well to combine all the ingredients.</li>
+                                <li class="recipe-list-item">-- Add garam masala and mix it in.</li>
+                                <li class="recipe-list-item">-- If the dal seems too thick, you can add some water to adjust the consistency.</li>
+                                <li class="recipe-list-item">-- Let the dal simmer on low heat for about 5-10 minutes, allowing the flavors to meld together.</li>
+                                <li class="recipe-list-item">-- Garnish with freshly chopped coriander leaves.</li>
+                                <li class="recipe-list-item">-- Serve hot with steamed rice or naan bread.</li>
+                                </ul>
+                                </p>
+                                </div>
+                                </div>
+                                </div>
+                </div>
+            </div>
+            <div class="card" id="gallery2">
+                <div class="image">
+                    <img src="img/sambar.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>SAMBAR</h3><br>
+                    <button class="recipe-button" onclick="openSambarRecipePopup()">Get Detailed Recipe</button>
+                    <div id="sambarRecipePopup" class="recipe-popup">
+                        <div class="recipe-content">
+                          <!-- Add the detailed recipe content here -->
+                          <div class="recipe-scroll">
+                          <h2>Sambar</h2>
+                          <p class="left-align"> <b>Ingredients:</b><br>
+                            1/2 cup split pigeon peas (toor dal),2 cups mixed vegetables (such as carrots, beans, eggplant, pumpkin)(chopped),1 onion(finely chopped),2 tomatoes(chopped),1 drumstick (optional)(cut into small pieces),2 tablespoons sambar powder,1/2 teaspoon turmeric powder,1 teaspoon tamarind paste,1 tablespoon jaggery or sugar (optional),Salt to taste,Coriander leaves for garnish<br>
+                            <b>For Tempering</b><br>
+                            1 tablespoon oil,1 teaspoon mustard seeds,1 teaspoon cumin seeds,1/2 teaspoon fenugreek seeds,2 dried red chilies,A few curry leaves<br>
+                            <b>Instructions:</b><br>
+                            <ul>
+                                <li class="recipe-list-item">-- Rinse the toor dal under running water until the water runs clear. In a pressure cooker, cook the dal with 2 cups of water until it becomes soft and mushy. Set aside.</li>
+                                <li class="recipe-list-item">-- In a separate pot, add the chopped vegetables, onion, tomatoes, and drumstick (if using). Add enough water to cover the vegetables and bring to a boil. Cook until the vegetables are tender.</li>
+                                <li class="recipe-list-item">-- Add sambar powder, turmeric powder, tamarind paste, jaggery or sugar (if using), and salt to the cooked vegetables. Mix well and let it simmer for a few minutes.</li>
+                                <li class="recipe-list-item">-- Add the cooked dal to the pot and mix everything together. Adjust the consistency by adding water if needed.</li>
+                                <li class="recipe-list-item">-- In a small pan, heat oil for tempering. Add mustard seeds and let them splutter. Then add cumin seeds, fenugreek seeds, dried red chilies, and curry leaves. Fry for a few seconds until aromatic.</li>
+                                <li class="recipe-list-item">-- Pour the tempering over the sambar and mix well.</li>
+                                <li class="recipe-list-item">-- Let the sambar simmer for another 5-10 minutes to allow the flavors to meld together.</li>
+                                <li class="recipe-list-item">-- Garnish with fresh coriander leaves.</li>
+                                <li class="recipe-list-item">-- Serve hot with steamed rice or idli/dosa.</li>
+                                </ul>
+                                </p>
+                                </div>
+                                </div>
+                                </div>
+                </div>
+            </div>
+
+            <div class="card" id="gallery2">
+                <div class="image">
+                    <img src="img/gulab jamun.jpg" alt="">
+                </div>
+                <div class="caption">
+                    <h3>GULAB JAMUN</h3><br>
+                    <button class="recipe-button" onclick="openGulabRecipePopup()">Get Detailed Recipe</button>
+                    <div id="gulabRecipePopup" class="recipe-popup">
+                        <div class="recipe-content">
+                          <!-- Add the detailed recipe content here -->
+                          <div class="recipe-scroll">
+                          <h2>Gulab Jamun</h2>
+                          <p class="left-align"> <b>Ingredients</b><br>
+                            1 cup khoya (milk solids),1/4 cup all-purpose flour,1/4 teaspoon baking powder,2 tablespoons milk (as needed to make a soft dough),Ghee or oil for frying<br>
+                            <b>For the Sugar Syrup</b><br>
+                            1.5 cups sugar,1.5 cups water,1/2 teaspoon cardamom powder,A few saffron strands (optional),1 teaspoon rose water<br>
+                            <b>Instructions</b><br>
+                            <ul>
+                                <li class="recipe-list-item">-- In a mixing bowl, crumble the khoya until it becomes smooth.</li>
+                                <li class="recipe-list-item">-- Add all-purpose flour and baking powder to the khoya. Mix well to combine.</li>
+                                <li class="recipe-list-item">-- Gradually add milk, a little at a time, and knead gently to form a soft and smooth dough. The dough should not be too sticky or too dry. Adjust the amount of milk as needed.</li>
+                                <li class="recipe-list-item">-- Divide the dough into small portions and shape each portion into smooth balls without any cracks. Make sure the balls are compact but not too tight.</li>
+                                <li class="recipe-list-item">-- Heat ghee or oil in a deep pan or kadai for frying. The oil should be medium-hot for frying the Gulab Jamun.</li>
+                                <li class="recipe-list-item">-- Carefully drop the prepared Gulab Jamun balls into the hot oil. Fry them on medium-low heat until they turn golden brown, stirring occasionally for even cooking. Ensure that the Gulab Jamuns are cooked evenly and don't become too dark.</li>
+                                <li class="recipe-list-item">-- Once the Gulab Jamuns are fried, remove them from the oil using a slotted spoon and drain the excess oil on a paper towel.</li>
+
+                            <p><b>For the Sugar Syrup</b></p>
+
+                                <li class="recipe-list-item">-- In a separate pan, add sugar and water. Heat the mixture over medium heat until the sugar dissolves completely.</li>
+                                <li class="recipe-list-item">-- Add cardamom powder and saffron strands (if using) to the sugar syrup. Let it simmer for 5-6 minutes on medium heat until the syrup slightly thickens.</li>
+                                <li class="recipe-list-item">-- Remove the sugar syrup from the heat and add rose water. Stir well to combine.</li>
+                                <li class="recipe-list-item">-- Allow the sugar syrup to cool for a few minutes.</li>
+                                <li class="recipe-list-item">-- Gently drop the fried Gulab Jamun balls into the warm sugar syrup. Let them soak in the syrup for at least 30 minutes to an hour, allowing the Gulab Jamuns to absorb the syrup and become soft and spongy.</li>
+                                </ul>
+                            </p>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <ul>
+                <li><a href="drinks.html"><button class="text-color">&lt;&lt;</button></a></li>
+                <li class="active"><a href="index.html">Lunch</a></li>
+                <li><a href="snacks.html"><button class="text-color">Snacks</button></a></li>
+                <li><a href="drinks.html"><button class="text-color">Drinks</button></a></li>
+                <li><a href="snacks.html"><button class="text-color">&gt;&gt;</button></a></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="title"><b>Discover the Rich Flavors and Culinary Heritage of Indian Cuisine</b></h1>
+        <div class="about_banner">
+            <img src="img/Indian food2.jpg" alt="">
+        </div>
+
+        <h1 class="caption">Indian Food</h1>
+        <em>With passion For Real, Good Food</em>
+        <p>
+            Indian cuisine is a rich tapestry of flavors, aromas, and traditions that captivate the senses and leave a lasting impression. With its diverse regional cuisines, India offers a remarkable culinary journey filled with vibrant spices, aromatic herbs, and a harmonious blend of textures. From the fiery curries of the north to the delicate coastal seafood delicacies of the south, every region has its distinct culinary identity. Indian food is not just about sustenance; it's a celebration of culture and community, where meals bring people together and create lasting memories. Embark on a gastronomic adventure and let the vibrant flavors of Indian food transport you to a world of taste sensations like no other.
+        </p>
+    </section>
+
+
+    <footer id="footer">
+        <div class="footer" >
+        <h1>About Website</h1>
+        <p>
+            This Website Provides.<br>Delicious food items<br>Which are famous in India<br>
+            Also gives information about<br>
+            how to prepare recipe.
+
+        </p>
+    </div>
+    <div class="footer">
+        <h1>Contact Information</h1>
+        <p>
+            What's App: xxxxxxxx<br>
+            Phone Number: xxxxxxxx<br>
+            Email: xxxxxxxxxxx<br>
+            Address: xxxxxxxxx<br>
+            Landmark: xxxxxxxxxx<br>
+        </p>
+    </div>
+
+
+
+    <div class="posts">
+        <h1>POPULAR TAGS</h1>
+        <div class="each_post active">Lunch</div>
+        <div class="each_post"><a href="#gallery" style="color:white;">Chicken Biryani</a></div>
+        <div class="each_post"><a href="#gallery" style="color:white;">Panner curry</a></div>
+        <div class="each_post"><a href="#gallery" style="color:white;">Chicken Tandoori</a></div>
+        <div class="each_post"><a href="#gallery" style="color:white;">Mushroom Curry</a></div>
+        <div class="each_post"><a href="#gallery2" style="color:white;">Naan</a></div>
+        <div class="each_post"><a href="#gallery2" style="color:white;">Dal</a></div>
+        <div class="each_post"><a href="#gallery2" style="color:white;">Sambar</a></div>
+        <div class="each_post"><a href="#gallery2" style="color:white;">Gulab Jamun</a></div>
+
+    </div>
+</footer>
+</main>
+<script>
+    var nav = document.getElementById("nav");
+
+    function menu_show(){
+        nav.style.display="block";
+    }
+
+    function menu_exit(){
+        nav.style.display="none";
+    }
+</script>
+<script src="java.js"></script>
+</body>
+</html>
